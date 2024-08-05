@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 
-const userSchema = mongoose.Schema({
+const userSchema = new mongoose.Schema({
   fullName: {
-    type: String,  // Changed 'typeof' to 'type'
+    type: String,  // Correct usage of 'type'
     required: true,
   },
   email: {
